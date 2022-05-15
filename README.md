@@ -7,10 +7,10 @@
   <summary>Table of Contents</summary>
   <ul>
     <li>
-      <a href="#about-the-project">Languages supported</a>
+      <a href="#languages">Languages supported</a>
       <ul>
-        <li><a href="#built-with">English</a></li>
-        <li><a href="#built-with">中文</a></li>
+        <li><a href="#English">English</a></li>
+        <li><a href="#Chinese">中文</a></li>
       </ul>
     </li>
   </ul>
