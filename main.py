@@ -2,7 +2,7 @@ from PIL import ImageFont, ImageDraw, Image
 from io import BytesIO
 import requests
 
-def generate_meme(url, txt):
+def generate_meme(url:str, txt:str, color:str, fontsize:int):
     """Generate and display meme
 
     Args:
@@ -12,9 +12,7 @@ def generate_meme(url, txt):
     
     image = Image.open(BytesIO(requests.get(url).content))
     draw = ImageDraw.Draw(image)
-    fontsize = 80
     ttf = 'https://www.dropbox.com/s/cq2bainz70cpbu4/ArialUnicodeMS.ttf?dl=1'
-    color = 'red' #default
 
     W, H = image.size
 
@@ -32,7 +30,7 @@ def generate_meme(url, txt):
     image.show() #display
     
 def main():
-    generate_meme("https://i.imgur.com/fYe7MrH.jpg", "測試中文字啊啊啊")
+    generate_meme("https://i.imgur.com/fYe7MrH.jpg", "測試中文字啊啊啊", 'red', 80)
 
 if __name__ == '__main__':
     main()
